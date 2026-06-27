@@ -1,0 +1,91 @@
+/* Base Page Styles */
+body {
+    background-color: #030a05;
+    color: #39ff14; /* Matrix Neon Green */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* The Main Terminal Frame */
+.terminal-container {
+    width: 90%;
+    max-width: 1000px;
+    border: 2px solid #39ff14;
+    border-radius: 8px;
+    background-color: #050f07;
+    padding: 15px;
+    /* This creates the iconic neon outer glow */
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
+}
+
+/* Header style */
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #39ff14;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Grid Layouts for Panels */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.widgets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Standard Panels (Boxes) */
+.box {
+    border: 1px solid #39ff14;
+    border-radius: 4px;
+    padding: 15px;
+    background: rgba(57, 255, 20, 0.02);
+    box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+/* Text and Button Glows */
+h3 {
+    margin-top: 0;
+    text-shadow: 0 0 5px #39ff14;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    border: 1px solid #39ff14;
+    padding: 8px;
+    margin: 10px 0;
+    color: #39ff14;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #39ff14;
+    color: #030a05;
+    box-shadow: 0 0 15px #39ff14;
+}
+
+/* Clock styling */
+.time {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0 0 8px #39ff14;
+}
+.label {
+    font-size: 0.8rem;
+    text-align: center;
+    opacity: 0.7;
+}
